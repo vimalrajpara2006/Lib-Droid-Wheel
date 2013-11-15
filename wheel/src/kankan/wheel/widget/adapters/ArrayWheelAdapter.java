@@ -31,8 +31,8 @@ public class ArrayWheelAdapter<T> extends AbstractWheelTextAdapter {
      * @param context the current context
      * @param items the items
      */
-    public ArrayWheelAdapter(Context context, T items[]) {
-        super(context);
+    public ArrayWheelAdapter(Context context, T items[],int itemResource, int itemTextResource) {
+        super(context,itemResource, itemTextResource);
         
         //setEmptyItemResource(TEXT_VIEW_ITEM_RESOURCE);
         this.items = items;
